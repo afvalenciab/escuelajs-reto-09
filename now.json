@@ -1,0 +1,12 @@
+{
+  "name": "platzistore",
+  "version": 2,
+  "builds": [{ "src": "src/index.js", "use": "@now/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "src/index.js" }],
+  "env": {
+    "DB_USER": "@platzistore-db-user",
+    "DB_PASSWORD": "@platzistore-db-password",
+    "DB_HOST": "@platzistore-db-host",
+    "DB_NAME": "@platzistore-db-name"
+  }
+}
